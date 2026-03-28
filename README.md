@@ -1,195 +1,164 @@
-# Disability Assistant Tool
+# ♿ Disability Assistant Tool
 
-## Overview
+## 🎯 Real-Time Accessibility Support System
 
-Disability Assistant Tool is an accessibility-focused perception and input conditioning system designed to support individuals with physical and cognitive challenges in video-based interactive environments.
+The Disability Assistant Tool helps users **improve control, stability, and awareness** in video-based environments.
 
-This project combines real-time video analysis, adaptive input conditioning, and multimodal feedback to enhance user stability, spatial awareness, and control — while ensuring the user remains fully responsible for all actions.
+It is designed for individuals with:
 
-The system is built using a modular research-oriented architecture to support transparency, reproducibility, and long-term maintainability.
+- motor challenges
+- tremors or inconsistent movement
+- limited mobility
+- cognitive or visual processing needs
 
----
-
-## Research Purpose
-
-The primary objective of this project is to explore how real-time perception systems and adaptive input conditioning can improve accessibility in interactive software environments.
-
-The tool focuses on:
-
-* Enhancing visual awareness through structured overlays
-* Supporting motor stability through configurable input filtering
-* Providing multimodal feedback to reinforce user intent
-* Maintaining ethical and transparent system boundaries
-
-This project does not aim to automate user actions. Instead, it strengthens user-driven control through adaptive assistance.
+✔️ Fully user-controlled  
+✔️ No automation  
+✔️ No input takeover  
+✔️ Built for accessibility — not gameplay assistance  
 
 ---
 
-## Core Functional Capabilities
+## 🧠 What This Tool Does
 
-### 1. Real-Time Perception Assistance
+This tool supports users by improving how they:
 
-The system processes a live video feed (e.g., USB capture device or camera input) and performs real-time object detection using configurable AI backends.
+- see what’s happening on screen  
+- control movement more consistently  
+- respond more comfortably in real time  
 
-Capabilities include:
-
-* Frame-by-frame visual analysis
-* Configurable confidence thresholds
-* Selectable inference backends (CPU, CUDA, DirectML)
-* Optional region masking (left, right, center)
-* Visual overlays to reinforce detected spatial information
-
-All analysis occurs externally through video input. The system does not access or modify protected software processes.
+It enhances the user’s experience without replacing their control.
 
 ---
 
-### 2. Input Conditioning & Motor Stabilization
+## ⚙️ Core Features
 
-The tool provides configurable conditioning mechanisms to support users who experience tremors, inconsistent movement patterns, or reduced fine motor control.
+### 🖥 Visual Awareness Support
 
-Available mechanisms include:
-
-* Adjustable smoothing filters
-* Deadzone calibration
-* Sensitivity scaling
-* Output damping
-* Curve-based response shaping
-* Runtime enable/disable hotkey control
-
-These features help improve steadiness and predictability while preserving user intent. Movement remains entirely user-driven.
+- Provides optional visual overlays to improve clarity and awareness  
+- Helps highlight important on-screen information  
+- Supports focus and reduced visual clutter  
 
 ---
 
-### 3. Adaptive Control Modes
+### 🎮 Input Stability Support
 
-To accommodate diverse mobility needs, the system supports multiple control configurations:
+Designed for users who experience:
 
-* Standard input mode
-* Quadriplegic mode
-* Single-switch mode
-* Joystick integration
-* Controller abstraction support
-* Adjustable dwell timing
-* Breath and head sensitivity configuration
+- shaky movement  
+- inconsistent control  
+- reduced fine motor precision  
 
-These modes allow customization based on individual accessibility requirements.
+Features include:
 
----
+- smoothing adjustments  
+- sensitivity tuning  
+- response shaping  
+- customizable control behavior  
 
-### 4. Multimodal Feedback System
-
-The tool integrates layered feedback channels to enhance usability:
-
-* Visual overlays
-* Optional runtime performance (CPS) display
-* Text-to-Speech support (SAPI / pyttsx3)
-* Audio cue support
-* Runtime state indicator
-
-This multimodal design improves clarity and situational awareness for different sensory preferences.
+All movement remains **fully controlled by the user**.
 
 ---
 
-### 5. Hardware Compatibility Framework
+### 🧩 Adaptive Accessibility Modes
 
-The system is engineered for broad hardware support and research flexibility:
+Supports different accessibility needs:
 
-* CPU-based inference
-* NVIDIA CUDA acceleration
-* AMD DirectML acceleration
-* ONNX Runtime GPU providers
-* USB capture device compatibility
-* Standard camera input support
+- standard input mode  
+- joystick support  
+- single-switch setups  
+- alternative control configurations  
 
-Built-in diagnostic tools report system configuration, GPU availability, device detection, and library support status.
+Allows users to adjust the tool to match their abilities.
 
 ---
 
-## Who It Helps
+### 🔊 Feedback & Support Systems
 
-Disability Assistant Tool is intended to support:
+- visual feedback  
+- optional audio cues  
+- text-to-speech support  
+- system status indicators  
 
-* Individuals with motor impairments
-* Individuals experiencing tremors or reduced fine motor precision
-* Individuals with limited mobility or muscle control challenges
-* Users who rely on adaptive joystick or single-switch systems
-* Individuals who benefit from enhanced visual or auditory reinforcement
-* Veterans and individuals living with physical service-related disabilities
-* Developers and educators researching accessible interface design
-
-The system is configurable to accommodate a wide range of accessibility needs.
+These help improve clarity and confidence during use.
 
 ---
 
-## Ethical & Safety Boundaries
+### 🖥 Hardware Support
 
-This project is designed with strict safety and transparency principles.
-
-The system:
-
-* Operates exclusively on video input
-* Does not modify external software
-* Does not inject into running processes
-* Does not alter protected files
-* Does not implement automated target lock-on
-* Keeps all motion and decision-making user-controlled
-
-Its function is assistive, not autonomous.
+- works with standard cameras and capture devices  
+- supports CPU and GPU acceleration  
+- compatible with NVIDIA, AMD, and Intel systems  
 
 ---
 
-## Architectural Design
+## 🛡 Safety & Design Principles
 
-The project follows a modular research architecture separating:
+This tool is built with strict accessibility-focused boundaries:
 
-* Vision processing
-* Accessibility input handling
-* Output routing
-* Feedback systems
-* System diagnostics
-* Educational resources
+- does not inject into software  
+- does not modify external programs  
+- does not control mouse or keyboard  
+- does not automate actions  
+- does not interact with protected processes  
 
-This separation ensures clarity of responsibility, ease of testing, and long-term scalability.
-
----
-
-## Mission Statement
-
-Our mission is to expand accessibility through ethical, transparent, and responsible technology.
-
-We are committed to:
-
-* Empowering individuals with disabilities through assistive innovation
-* Promoting inclusive design in interactive software environments
-* Supporting adaptive technology users with stable and configurable tools
-* Enhancing capability without automating user agency
-* Maintaining integrity, safety, and technical transparency in development
-
-Disability Assistant Tool exists to improve awareness, stability, and confidence — while preserving user control at all times.
+All decisions and actions remain **user-driven**.
 
 ---
 
-## Versioning
+## 👥 Who This Helps
 
-This project follows structured versioning to reflect architectural and research maturity.
-
-* **Major Version (X.0.0)** — Significant architectural changes or research milestone releases
-* **Minor Version (0.X.0)** — Feature expansions, new accessibility modes, or backend improvements
-* **Patch Version (0.0.X)** — Stability fixes, performance refinements, and compatibility updates
-
-Version numbers are intended to communicate development progression clearly to contributors, researchers, and end users.
+- individuals with motor impairments  
+- users with tremors or reduced control  
+- people using adaptive hardware  
+- veterans with physical challenges  
+- students and developers exploring accessibility  
 
 ---
 
-## Nonprofit Attribution
+## 🏗 Architecture Overview
 
-Disability Assistant Tool is developed and maintained under the mission of **FNBubbles420 Org**, a registered 501(c)(3) nonprofit organization focused on accessibility, education, and inclusive technology innovation.
+The system is built using a modular design:
 
-FNBubbles420 Org is committed to:
+- visual processing  
+- input handling  
+- feedback systems  
+- system diagnostics  
 
-* Supporting disabled gamers, developers, students, and veterans
-* Promoting ethical and responsible assistive technology
-* Expanding STEM and accessibility education initiatives
-* Building inclusive communities around adaptive innovation
+This structure allows flexibility, stability, and long-term development.
 
-This project reflects the organization’s dedication to empowering individuals through accessible engineering and transparent development practices.
+---
+
+## 🎯 Mission
+
+This project exists to:
+
+- improve accessibility in interactive environments  
+- support individuals with disabilities  
+- promote ethical assistive technology  
+- enhance user control — not replace it  
+
+---
+
+## 🔢 Versioning
+
+- Major: architectural changes  
+- Minor: new features  
+- Patch: fixes and improvements  
+
+---
+
+## 💙 Nonprofit Attribution
+
+Developed by **FNBubbles420 Org**  
+Registered 501(c)(3) nonprofit
+
+Focused on:
+
+- accessibility tools  
+- education  
+- veteran support  
+- inclusive technology  
+
+---
+
+© FNBubbles420 Org — All rights reserved
